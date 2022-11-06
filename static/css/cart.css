@@ -1,0 +1,165 @@
+.place-order-btn{
+    display: flex;
+    justify-content: space-between;
+    font-size: inherit;
+    color:white;
+    background-color: #19110b;
+    box-sizing: border-box;
+    display:inline-block;
+    border: 0px;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.total-btn{
+    justify-content: space-between;
+    font-size: inherit;
+    color:white;
+    background-color: #19110b;
+    box-sizing: border-box;
+    display:inline-block;
+    border: 0px;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.place-order-btn:hover , .total-btn:hover{
+    background-color: #e1e1e1;
+    color: black;
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th {
+  border-top: none;
+}
+.table{
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+tr{
+    background-color: whitesmoke;
+    border: 2px solid white;
+}
+.table input{
+    width: 40px;
+    border:none;
+    text-align: center;
+    background-color: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin:0;
+}
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
+input:focus{
+    outline:none;
+}
+
+.add , .minus{
+    border:none;
+    margin-left: 5px;
+    margin-right: 2px;
+}
+
+.add:focus, .minus:focus{
+    outline:none;
+}
+@media (max-width:900px) {
+    .place-order-btn{
+        display: flex;
+        margin-left: 20%;
+        justify-content: space-between;
+        font-size: inherit;
+        color:white;
+        background-color: #19110b;
+        box-sizing: border-box;
+        display:inline-block;
+        border: 0px;
+        letter-spacing: 2px;
+        padding: 10px 30px;
+        cursor: pointer;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    .place-order-btn:hover , .total-btn:hover{
+        background-color: #e1e1e1;
+        color: black;
+    }
+    .total-btn{
+        margin-top:10px;
+        margin-left: 20%;
+        justify-content: space-between;
+        font-size: inherit;
+        color:white;
+        background-color: #19110b;
+        box-sizing: border-box;
+        display:inline-block;
+        border: 0px;
+        letter-spacing: 2px;
+        padding: 10px 30px;
+        cursor: pointer;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    .table>tbody>tr>td,
+    .table>tbody>tr>th {
+      border-top: none;
+    }
+    .cart-item{
+        margin-top: 50px !important;
+        margin-left: 20px;
+    }
+    .row{
+        width: 100% !important;
+    }
+    .table{
+        border-collapse: separate;
+        border-spacing: 0 10px;
+        /* width: 100% !important; */
+    }
+    .table img{
+        height: 50px !important;
+    }
+    tr{
+        background-color: white !important;
+    }
+    .table input{
+        background-color: none;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+        margin:0;
+    }
+    input[type=number]{
+        -moz-appearance: textfield;
+    }
+    input:focus{
+        outline:none;
+    }
+    .add , .minus{
+        background-color: white;
+        border:none;
+    }
+    .add:focus, .minus:focus{
+        outline:none;
+    }
+}

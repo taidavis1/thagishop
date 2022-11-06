@@ -1,0 +1,101 @@
+body{
+    font-family: monospace;
+    padding-top: 40px;
+}
+
+.logo h1{
+    font-family: 'Nanum Brush Script',cursive;
+    font-style: normal; 
+    font-variant: normal;
+    font-weight: 900;
+    font-size: 3em;
+    letter-spacing: 3px;
+}
+
+.login-form{
+    margin-top: 30px;
+}
+
+.form-outer{
+    border-radius: 20px;
+    display: block;
+    box-shadow: 2px 2px 5px  rgba(0, 0, 0,0.5);
+    width: 50%;
+    font-size: inherit;
+    letter-spacing: 2px;
+    padding: 20px 50px 20px;
+}
+.form-outer .btn{
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    background-color: #19110b;
+    box-sizing: border-box;
+    display:inline-block;
+    border: 0px;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+    margin: 10px 0px 10px 0px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.form-outer .btn:hover{
+    background-color: #e1e1e1;
+    color: black;
+}
+
+@media (max-width:900px) {
+    .login-form{
+        width:100% !important;
+    }
+    .logo h1{
+        font-family: "Brush Script MT";
+        font-style: normal; 
+        font-variant: normal;
+        font-weight: 900;
+        font-size: 3em;
+        letter-spacing: 3px;
+    }
+    .login-form{
+        margin-top: 20px;
+    }
+    .form-outer{
+        border-radius: 20px;
+        display: block;
+        box-shadow: 2px 2px 5px  rgba(0, 0, 0,0.5);
+        width: 85%;
+        font-size: inherit;
+        letter-spacing: 2px;
+        padding: 20px 50px 20px;
+    }
+    .form-outer .btn{
+        display: flex;
+        justify-content: space-between;
+        color:white;
+        background-color: #19110b;
+        box-sizing: border-box;
+        display:inline-block;
+        border: 0px;
+        letter-spacing: 2px;
+        padding: 10px 20px;
+        margin: 10px 0px 10px 0px;
+        cursor: pointer;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    .log-reg-button{
+        margin-left: 5%;
+    }
+    
+    .form-outer .btn:hover{
+        background-color: #e1e1e1;
+        color: black;
+    }
+
+}

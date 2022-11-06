@@ -1,0 +1,370 @@
+<!doctype html>
+<html>
+<head>
+    <title>Thagi3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ### CSS ### -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/layout.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/static/img/anhtrinew/logo.png">
+    <!-- ### JS ### -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/static/js/layout.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4740710434758837" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="navigation" class="navigation">
+        <div class="tri-navbar">
+            <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light shadow-lg is-hidden">
+                <h5 id="logo-home" class="logo-home">Peace of Art</h5>
+                <h5 id="logo-home-small" class="navbar-brand">What Apple doesn't give you !</h5>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#v3_menus">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="v3_menus">
+                    <ul class="nav_ul navbar-nav">
+                        <!--<li class="nav-item">-->
+                        <!--    <a id="Home" class="nav-link" href="/">-->
+                        <!--        <div class="nav-item-primary">-->
+                        <!--            <div class="nav-item__bullets d-lg-none"></div>-->
+                        <!--            <span class="nav-item__icon"> <i class="fas fa-home"></i></span>-->
+                        <!--            <span class="nav-item__name">Home</span>-->
+                        <!--        </div>-->
+                        <!--    </a>-->
+                        <!--</li>-->
+                        <!--<li class="nav-item">-->
+                        <!--    <a id="Shop" class="nav-link">-->
+                        <!--        <div class="nav-item-primary">-->
+                        <!--            <span class="nav-item__bullets d-lg-none"></span>-->
+                        <!--            <span class="nav-item__icon">-->
+                        <!--                <i class="fas fa-shopping-cart"></i>-->
+                        <!--            </span>-->
+                        <!--            <span class="nav-item__name">Shop</span>-->
+                        <!--        </div>-->
+                        <!--    </a>-->
+                        <!--</li>-->
+                        <li id="log-btn" class="nav-item">
+                            <a class="log-link nav-link" href="/Login">
+                                <div class="nav-item-primary">
+                                    <span class="nav-item__bullets d-lg-none"></span>
+                                    <span style = "color:white;" class="nav-item__icon">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                    <span style= "color:white;" id="login_text" class="nav-item__name">Login</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="What?" aria-label="What">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <div id="tri-carsoul" class="tri-carousel carousel slide carousel-fade carousel-multi-item" data-ride="carousel"
+        data-interval="false">
+        <ol class="carousel-indicators">
+            <li data-target="#tri-carsoul" data-slide-to="0" class="active"></li>
+            <li data-target="#tri-carsoul" data-slide-to="1"></li>
+            <li data-target="#tri-carsoul" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100 img-fluid" src="/static/img/anhtrinew/1800x830_banner.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 img-fluid" src="/static/img/anhtrinew/nen3.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 img-fluid" src="/static/img/anhtrinew/1800x830_banner.png" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#tri-carsoul" role="button" data-slide="prev">
+            <div class="prev">
+                <div class="prev-icon">
+                    <i class="fas fa-arrow-left"></i>
+                </div>
+            </div>
+        </a>
+        <a class="carousel-control-next" href="#tri-carsoul" role="button" data-slide="next">
+            <div class="prev">
+                <div class="next-icon">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+        </a>
+    </div>
+    <section class="intro">
+        <div class = "row justify-content-center">
+            <h2>What we do</h2>
+        </div>
+        <div class="tri-product">
+            <div class="row justify-content-center">
+                <div class="product-row-1">
+                    <div class="row">
+                        {% for i in item %}
+                            <div class="container col-md-4 col-lg-4">
+                                <img data-toggle="modal" data-target="#tri-pop-up-{{i.id}}" class="img-fluid" src="/static/img/anhtrinew/anh-tri-real/{{i.product_img}}">
+                                <div class="title">
+                                    <h5>{{i.product_name}}</h5>
+                                </div>
+                                <hr>
+                            </div>
+                            
+                            <div class="modal fade justify-content-center" id="tri-pop-up-{{i.id}}" tabindex="-1" role="dialog" aria-labelledby="tri-pop-up-{{i.id}}" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <!--<div class="modal-header">-->
+                                        <!--    <button style="border:none;" type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+                                        <!--        <span aria-hidden="true">&times;</span>-->
+                                        <!--    </button>-->
+                                        <!--</div>-->
+                                        <div class = "modal-body">
+                                            <img data-toggle="modal" data-target="#tri-pop-up-{{i.id}}" class="img-fluid" src="/static/img/anhtrinew/anh-tri-real{{i.product_img_des}}">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+       
+    <section class="intro-body">
+         <div class = "row justify-content-center">
+            <h2>What we think</h2>
+        </div>
+        <div class="row">
+            <div class="tri-company col-md-6 col-lg-6">
+                <img src="/static/img/anhtrinew/anhtrang.png">
+                <div class="more-info">
+                    <div class="row justify-content-center">
+                        <p class="col-md-10 col-lg-10">
+                            APPLE, CÔNG TY ĐỨNG ĐẰNG SAU CHIẾC ĐIỆN THOẠI IPHONE DANH TIẾNG, LÀ ĐẠI DIỆN CỦA LỐI SỐNG HIỆN ĐẠI, HÀO NHOÁNG. TUY NHIÊN ĐI LIỀN VỚI NÓ LÀ SỰ XA CÁCH VỚI CHÍNH NHỮNG NGƯỜI XUNG QUANH,
+                            THỂ HIỆN QUA NHỮNG TƯƠNG TÁC BÌNH THƯỜNG NHẤT. CHÚNG TA BÂY GIỜ NHÌN VÀO MÀN HÌNH ĐIỆN THOẠI CÒN NHIỀU HƠN MẶT NGƯỜI ĐỐI DIỆN,
+                            TA NÓI CHUYỆN BẰNG NGÓN TAY, NGHE BẰNG MẮT VÀ GIÁ TRỊ CÁ NHÂN ĐƯỢC THỂ HIỆN BẰNG SỐ NGÓN CÁI DƯỚI MỖI TẤM HÌNH. 
+                            ĐIỀU NÀY VÔ TÌNH LÀM GIẢM ĐI SỰ THẤU HIỂU NHỮNG GIÁ TRỊ BÊN TRONG CỦA BẢN THÂN, ĐIỀU GÌ LÀM MÌNH VUI, 
+                            ĐIỂM KHÁC BIỆT CỦA CHÚNG TA LÀ GÌ, ĐỂ RỒI LAO MÌNH THEO NHỮNG GIÁ TRỊ XÃ HỘI ĐẶT CHO MÌNH ĐỂ RỒI THAM GIA VÀO CUỘC ĐUA DO NGƯỜI KHÁC TẠO RA. 
+                            CHÚNG TA THƯỜNG HỎI NHAU DẠO NÀY LƯƠNG THƯỞNG ỔN KHÔNG, 
+                            CÔNG VIỆC THẾ NÀO HAY ĐÃ CÓ NGƯỜI YÊU CHƯA? NHƯNG CÂU HỎI QUAN TRỌNG NHẤT MÀ CHÚNG TA NÊN QUAN TÂM ĐẾN CÓ LẼ LÀ “DẠO NÀY SỐNG CÓ VUI KHÔNG ?”
+                            HAY CỤ THỂ HƠN LÀ “TỐI NGỦ CÓ NGON, SÁNG CÓ MUỐN RA KHỎI GIƯỜNG KHÔNG?” TUY NHIÊN, THÁNG GIÊNG CŨNG HIỀU RẰNG ĐÂU LÀ MỘT XU HƯỚNG TẤT YẾU, 
+                            CŨNG CHÍNH LÀ ĐỘNG LỰC ĐỂ XÃ HỘI PHÁT TRIỂN, CHÚNG TÔI CHỈ LÀ ĐƠN GIẢN LÀ MUỐN THÊM VÀO CUỘC SỐNG CỦA BẠN ĐIỀU CÒN THIẾU, 
+                            ĐÓ LÀ MỘT CHÚT NGHỆ THUẬT, MỘT SỰ SẺ CHIA VỚI CỘNG ĐỒNG VÀ MỘT YẾU TỐ RIÊNG CỦA MỖI CÁ NHÂN MÀ CHÚNG TÔI SẼ GIÚP BẠN NHÂN RA. ĐỂ TRÁI TÁO KHUYẾT KIA SẼ TRỞ NÊN TRỌN VẸN! 
+                            VÀ BẠN SẼ TIẾN GẦN HƠN TỚI CUỘC SỐNG HOÀN HẢO NHẤT CỦA CHÍNH MÌNH! XIN CẢM ƠN.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tri-info col-md-6 col-lg-6">
+                <img src="/static/img/anhtrinew/anhden.png">
+                <div class="tri-company-about">
+                    <div class="row justify-content-center">
+                        <p class="col-md-10 col-lg-10">
+                           Apple, a household name, represents the luxurious modern life. Your screen is always full of notifications from Facebook, Twitter, Binace and “both” battery is red all the time. We are capable of multitasking, acquire good money and knowledge. However, It leads to the distance between people, in every way. We prefer staring at the phone screen to each other’s face, we talk by fingers, hear with eyes and judge others by how many likes they got under each post. Hence, we don’t know what really matters, what makes you smile, what makes you different from the rest, at a result, we live by tags and tittle society gave us and compete in other’s race. When I ran into my pals, they always ask about salary, promotion, relationship, etc. But the important one gone missing, “Are you happy now?”, AKA “Do you love your job?”, “Do you sleep well every night”. On the other hand, Tháng Giêng (Thagi3) get that it is an inevitable trend, and motivation to keep the world going, we just simply want to return the missing piece, an artistic mind and a kind heart, plus your own unique strength that we will help you realize. So that we can go back to the Eden paradise. Xin cảm ơn! (The Vietnamese word for thank you with all our heart).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id = "product_section" class="tri-new-item">
+        <!--<div class="tri-new-item-header">-->
+            <div class="row justify-content-center">
+                <h2 onclick = "window.location.href = '/Shop' ">What we offer</h2>
+            </div>
+        <!--</div>-->
+        <br>
+        <div class="row justify-content-center">
+            <div class="tri-new-items">
+                <div class="row justify-content-center">
+                    {% for product in products %}
+                        <div class="col-md-4 col-lg-4 col-sm-12 p-3">
+                            <img onclick = "location.replace('/product_view/{{product.id}}')" class="img-fluid" src="static/img/anhtrinew/anh-tri-real/Product/{{product.product_img}}">
+                        </div>
+                    {% endfor %}
+                        
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tri-achievement">
+        <div class="row justify-content-center">
+            <h1>What we want</h1>
+        </div>
+    </section>
+    <section class="tri-video">
+        <div class="embed-responsive embed-responsive-16by9">
+            <video class="embed-responsive-item" controls id="tri-video">
+                <source src="/static/video/trivideo.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <section class="tri-story">
+        
+        <div class="row justify-content-center">
+            <h1>What we share</h1>
+        </div>
+        
+        <div class = "row justify-content-center">
+            <a class="btn btn-primary btn-floating" style="border:none; border-radius:20px; background-color:black;" href="https://www.facebook.com/LovehoctinhthuongCTXH" role="button">
+            
+                <img width="40px" height = "40px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png">    
+            
+            </a>
+            
+             <a class="btn btn-primary btn-floating m-1" style="border:none; border-radius:20px; background-color:black;" href="https://drive.google.com/drive/folders/1sdJhddHL2_xFEKSOZ7bOvxWHOs5AF8q_" role="button">
+                    
+                <i class="fab fa-google-drive fa-2x">
+                        
+                </i>
+                        
+            </a>
+                
+            <a class="btn btn-primary btn-floating m-1" style="border:none; border-radius:20px; background-color:black !important;" href="https://pin.it/780bZqs" role="button">
+                        
+                <img width="40px" height = "40px" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png">    
+                    
+            </a>
+                
+        </div>
+    </section>
+</body>
+
+<footer class="text-center">
+    <div class="container p-4">
+        <section class="footer">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 data-toggle="modal" data-target="#tri-pop-up-contact">Contact</h5>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5>
+                            <a style= "color:white !important ; text-decoration:none;" href = "#product_section">Shop</a>
+                        </h5>                        
+                    
+
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 data-toggle="modal" data-target="#tri-pop-up-suggest">Suggestion</h5>
+                </div>
+            </div>
+        </section>
+        <div class="text-center p-3">
+            © 2020 Copyright:
+            <a class="text-light" href="https://thagi3.com">thagi3.com</a>
+        </div>
+        <div class= "text-center">Proudly made in Vietnam </div>
+        
+    </div>
+    
+    <section class="popup-2">
+        <div class="modal fade justify-content-center" id="tri-pop-up-contact" tabindex="-1" role="dialog"
+            aria-labelledby="tri-pop-up-contact" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 style="letter-spacing: 2px" class="modal-title" id="tri-pop-up">Our friends and Partners: </h5>
+                        <button style="border:none;" type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div style="width:90%;" class = "modal-body row justify-content-center">
+                        <ul style = "list-style: none">
+                            <li>
+                                <span>
+                                    1. Love class in 18th Street (Vietnam)
+                                    80, 18thStreet, Linh Trung Ward, Thu Duc City, Vietnam
+                                    
+                                </span>
+                                
+                                <a href = "https://www.saostar.vn/sao-hoc-duong/co-mot-lop-hoc-am-tinh-nguoi-nhu-the-ngay-giua-sai-gon-sinh-vien-lam-gia-su-mien-phi-de-giup-tre-em-ngheo-ai-cung-biet-mat-con-chu-2917207.html">https://www.saostar.vn/sao-hoc-duong/co-mot-lop-hoc-am-tinh-nguoi-nhu-the-ngay-giua-sai-gon-sinh-vien-lam-gia-su-mien-phi-de-giup-tre-em-ngheo-ai-cung-biet-mat-con-chu-2917207.html</a>
+                            </li>
+                        
+                            <li>
+                                <span>
+                                    2. Love class in Tan Lap Provine (Vietnam)
+                                    Near IU, University Village in Ho Chi Minh City, Vietnam
+                                </span>
+                                
+                                <a href = "https://cand.com.vn/Phong-su-tu-lieu/Lop-hoc-tinh-thuong-cua-vo-chong-ong-giao-i67661/">https://cand.com.vn/Phong-su-tu-lieu/Lop-hoc-tinh-thuong-cua-vo-chong-ong-giao-i67661/</a>
+                                
+                            </li>
+                        
+                            <li>
+                                <span>
+                                    3. Ai Linh love School (Vietnam)
+                                    119 Road 154, Tan Phu Ward, District 9, Ho Chi Minh City
+                                </span>
+                                <a href = "https://www.youtube.com/watch?v=f7u6Bcy56kk">https://www.youtube.com/watch?v=f7u6Bcy56kk</a>
+                            </li>
+                        
+                            <li>
+                                <span>
+                                    4.Sunrise Childrens Home Karbanet (Kenya)
+                                    450 Kabarnet, Rift Valley Province, Kenya
+                                </span>
+                                <a href =  "https://www.facebook.com/sunrisekbt/">https://www.facebook.com/sunrisekbt/</a>
+
+                            </li>
+                            
+                        <ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="popup-3">
+        <div class="modal fade justify-content-center" id="tri-pop-up-suggest" tabindex="-1" role="dialog"
+            aria-labelledby="tri-pop-up-suggest" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 style="letter-spacing: 2px" class="modal-title p-2" id="tri-pop-up">Suggestion</h5>
+                        <button style="border:none;" type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class = "modal-body">
+                        <form action="" method="POST">
+                            <div class="form-group">
+								<input style="border-radius:20px;" class="form-control" id="name" name="name" type="text" placeholder="Enter Your Name">
+							</div>
+						    <div class="form-group">
+								<input style="border-radius:20px;" class="form-control" id="email" name="email" type="text" placeholder="Enter Your Email">
+							</div>
+						    <div class="form-group">
+								<textarea  type="text" name="description" id="description" class="form-control" style="resize: none; height:100px; border-radius:20px;" placeholder = "Your Concern..."></textarea>
+							</div>
+						    <div class="row justify-content-center">
+								<button type="submit" class="btn btn-outline-primary pt-2 mt-3 pr-4 pl-4 shadow-sm">Send Your Message</button>
+							</div>
+						</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</footer>
+
+
+</html>
+

@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+
+	<head>
+
+		<title>Shop</title>
+				<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- ### CSS ### -->
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="/static/fontawesome-free-5.15.4-web/css/all.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/static/css/admin/admin.css">
+
+		<!-- ### JS ### -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script src="/static/js/layout.js"></script>
+        <script src="/static/js/admin/admin.js"></script>
+
+	</head>
+
+
+    <body>
+
+
+        <section id="navigation" class="navigation">
+
+			<div class="tri-navbar">
+
+				<nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light">
+							
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#v3_menus">
+		
+						<span class="navbar-toggler-icon"></span>
+		
+					</button>
+		
+					<div class="collapse navbar-collapse justify-content-center" id="v3_menus">
+
+						<div class="row justify-content-center">
+
+							<ul class="nav_ul  navbar-nav">
+		
+								<li class="nav-item">
+			
+									<a class = "nav-link" href="/Admin">Home</a>
+			
+								</li>
+			
+								<li class="nav-item">
+			
+									<a class = "nav-link" href="/User-Info">User Info</a>
+			
+								</li>
+								
+								<li id="log-btn-admin" class="nav-item">
+			
+									<a class="log-link nav-link " href="/Logout">
+			
+										<i class="fas fa-user">
+			
+											<span class="login-text nav-text">Logout</span>
+			
+										</i>
+									
+									</a>
+			
+								</li>
+					
+							</ul>
+			
+						</div>
+
+					</div>
+		
+				</nav>
+		
+			</div>
+		
+		</section>
+
+        <section class="user-info" style="padding-top:50px;">
+
+            <div class="container p-5">
+
+				{% with message = get_flashed_messages() %}
+
+					{% if message %}
+
+						{% for msg in message%}
+
+                            <div class="alert alert-success">{{msg}}</div>
+
+						{% endfor %}
+					
+					{% endif %}
+
+				{% endwith %}
+
+
+                <table class="table table-light table-bordered table-responsive-lg">
+
+                    <thead class="thead-light">
+
+                        <th>id</th>
+
+                        <th>Email:</th>
+
+                        <th>Last Name:</th>
+
+                        <th>Phone #:</th>
+
+                        <th>Address:</th>
+
+						<th>Delete:</th>
+
+                    </thead>
+
+                    <tbody>
+
+                        {% for info in user%}
+
+                            <tr>
+
+                                <td>{{info.id}}</td>
+
+                                <td>{{info.email}}</td>
+
+								<td>{{info.last}}</td>
+
+                                <td>{{info.phone}}</td>
+
+                                <td>{{info.address}}</td>
+
+								<td>
+
+                                    <button type="button" class="btn btn-outline-danger btn-md" data-toggle="modal" data-target="#trimodal-{{info.id}}">
+    
+                                        <i class="fa fa-trash fa-lg"></i>
+    
+                                    </button>
+    
+                                    <div class="modal fade" id="trimodal-{{info.id}}" tabindex="-1" role="dialog" aria-labelledby="trimodal" aria-hidden="true">
+    
+                                        <div class="modal-dialog" role="document">
+    
+                                            <div class="modal-content">
+    
+                                                <div class="modal-header">
+    
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    
+                                                        <span aria-hidden="true">&times;</span>
+    
+                                                    </button>
+    
+                                                </div>
+    
+                                                <div class="modal-body">
+    
+                                                    <p class="text-danger">Are You Sure You Want To Delete {{info.last}}??</p>
+                                                
+                                                </div>
+    
+                                                <div class="modal-footer">
+    
+                                                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                                                        
+                                                    <button onclick = "window.location.href = '/delete_user/{{info.id}}' ;" type="button" class="btn btn-outline-danger">Delete</button>
+    
+                                                </div>
+    
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                </td>
+    
+                            </tr>
+
+                        {% endfor %}
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+    </body>
+
+
+</html>
