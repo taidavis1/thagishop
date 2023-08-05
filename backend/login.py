@@ -1,6 +1,6 @@
 from flask_login import *
 from flask import Blueprint
-from database import User
+from backend.database import User
 from flask import redirect , url_for
 
 login_manage = Blueprint('login_manage', __name__)
